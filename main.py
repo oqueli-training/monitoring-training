@@ -5,7 +5,7 @@ def hello_world (request):
 
 	logging_client = logging.Client()
 
-	logger = logging_client.logger("hiramlogs")
+	logger = logging_client.logger("monitoring-training-1")
 
 	logger.log_struct(
 	{"data": {"ratesPerSecond": {"price": random.randint(0,5)}}}
@@ -15,7 +15,7 @@ def hello_world (request):
 
 
 
-	logger2 = logging_client.logger("hiramlogs2")
+	logger2 = logging_client.logger("monitoring-training-2")
 
 	logger2.log_struct(
 	{"data": {"market": {"open": 0 }}}
